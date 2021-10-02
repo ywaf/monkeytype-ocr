@@ -43,7 +43,6 @@ bottom = 1500
 img_res = img.crop((left, top, right, bottom))
 
 img_res.save("screen2.png")
-###################################
 ################################### ocr
 filename = 'screen2.png'
 text = pytesseract.image_to_string(filename).strip().replace("\n", " ")
